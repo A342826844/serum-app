@@ -1,13 +1,15 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-  </div>
+  <van-button
+    @click="createLocalWallet"
+    type="primary"
+    size="large"
+>大的</van-button>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-    name: 'Home',
+    name: 'Large',
 });
 </script>

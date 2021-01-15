@@ -1,0 +1,204 @@
+/* 
+Reset Stylesheet 
+2020-09-02
+Author: long_shaun
+*/
+
+*{
+    -webkit-touch-callout:text;
+    -webkit-user-select:text;
+    -khtml-user-select:text;
+    -moz-user-select:text;
+    -ms-user-select:text;
+    user-select:text;
+}
+body,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+form,
+legend,
+input,
+textarea,
+button,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small,
+big,
+input,
+textarea,
+button,
+select {
+    font-size: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    font-weight: bold
+}
+
+ul,
+ol,
+menu {
+    list-style: none
+}
+
+img {
+    border: 0;
+}
+
+img,
+input,
+textarea,
+button,
+select {
+    vertical-align: middle
+}
+
+input,
+textarea,
+button,
+select,
+a {
+    outline: 0 none;
+    border: none;
+}
+
+a {
+    text-decoration: none
+}
+::-webkit-input-placeholder {
+    color: #b3b3b3;
+}
+// 去除默认样式
+input {
+    -webkit-appearance:none;
+    max-width: 100%;
+}
+
+//适配iPhone X
+.custom-footer{
+    bottom: 0 !important;
+    bottom: constant(safe-area-inset-bottom) !important;
+    bottom: env(safe-area-inset-bottom) !important;
+}
+
+// 去除 IOS移动端点击阴影
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+body,
+html {
+    background-color: #ffffff;
+    height: 100%;
+    color: #585858;
+    a {
+        color: #585858;
+    }
+    /*上下拉动滚动条时卡顿、慢*/
+    -webkit-overflow-scrolling : touch;
+    // -webkit-overflow-scrolling : auto;
+}
+#app{
+    height: 100%;
+    background-color: #ffffff;
+    padding-bottom: 0  !important;
+    padding-bottom: constant(safe-area-inset-bottom) !important;
+    padding-bottom: env(safe-area-inset-bottom) !important;
+    text-align: center;
+    font-size: 14px;
+    overflow: scroll;
+}
+#app.en{
+    font-family: 'AlibabaSans-Regular', 'Microsoft Yahei', 'Avenir', Helvetica, Arial, sans-serif;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    b,
+    strong {
+        font-family: 'AlibabaSans-Bold', 'Microsoft Yahei', 'Avenir', Helvetica, Arial, sans-serif;
+    }
+}
+#app.zh-CN, #app.zh-tw{
+    font-family: 'Alibaba-PuHuiTi-Regular', 'Microsoft Yahei', 'Avenir', Helvetica, Arial, sans-serif;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    b,
+    strong {
+        font-family: 'Alibaba-PuHuiTi-Bold', 'Microsoft Yahei', 'Avenir', Helvetica, Arial, sans-serif;
+    }
+}
+#app::after{
+    position: absolute;
+    content:'';
+    background:#fff;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    height:constant(safe-area-inset-bottom) !important;
+    height: env(safe-area-inset-bottom) !important;
+}
+
+#main{
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    overflow-x: hidden;
+    flex-direction: column;
+}
+#app .van-cell {
+    background-color: #F5F7F9;
+}
+#app .app-popup-bottom{
+    border-radius: 20px 20px 0 0;
+}
+.button_cont{
+    background-color: #F5F7F9;
+    .app-img-50{
+        margin-left: 40px;
+    }
+}
+.confirm_34 .van-dialog__message{
+    font-size: 34px;
+}
+#app .van-password-input__security li {
+    background-color: #F4F6F9;
+    border-radius: 5px;
+}
